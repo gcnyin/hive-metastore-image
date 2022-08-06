@@ -13,10 +13,10 @@ Edit `hive-site.xml`, change
 - `javax.jdo.option.ConnectionUserName`
 - `javax.jdo.option.ConnectionPassword`
 
-Remember to run the hive schema sql in target database.
-
 Then run
 
 ```
 ./build-hive-metastore.sh
 ```
+
+**_NOTE:_** Please run the `hive/scripts/metastore/upgrade` scripts into your target database before starting the container.
